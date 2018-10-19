@@ -1,5 +1,6 @@
+<h4 align="center">Git Bash + Hyper-V + CentOS7 On Windows</h4>
 <p align="center">
-    <img alt="Git Bash" src="https://user-images.githubusercontent.com/38936252/47197573-b2525f80-d399-11e8-966c-c7ba6d0cbb60.png" width="749">
+    <img alt="Git Bash" src="https://user-images.githubusercontent.com/38936252/47200745-df0e7300-d3a9-11e8-96b3-7302e3634027.png" width="749">
 </p>
 
 ## git bash settings

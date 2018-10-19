@@ -19,15 +19,6 @@ $ cp git-prompt.sh /etc/profile.d
     $ yum makecache
     ```
 
-- oh-my-zsh
-
-    ```sh
-    $ yum install -y zsh
-    $ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
-    $ chsh -s /bin/zsh
-    $ vi ~/.zshrc # change theme to steeef
-    ```
-
 - change hostname
 
     ```sh
@@ -46,6 +37,29 @@ $ cp git-prompt.sh /etc/profile.d
     NETMASK=255.255.255.0
 
     $ systemctl restart network
+    ```
+
+- install oh-my-zsh
+
+    ```sh
+    $ yum install -y zsh
+    $ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+    $ chsh -s /bin/zsh
+    $ vi ~/.zshrc # change theme to steeef
+    ```
+
+- install docker
+
+    ```sh
+    # docker-ce
+    $ yum install -y yum-utils device-mapper-persistent-data lvm2
+    $ yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+    $ yum makecache fast
+    $ yum -y install docker-ce
+    $ service docker start
+    # docker-compose
+    $ curl -L https://get.daocloud.io/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+    $ chmod 777 /usr/local/bin/docker-compose
     ```
 
 ## License

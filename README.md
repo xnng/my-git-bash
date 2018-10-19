@@ -1,6 +1,6 @@
 ## my git bash settings
 
-![](https://upload-images.jianshu.io/upload_images/10679800-15948c76c04da6f8.png)
+![](https://user-images.githubusercontent.com/38936252/47197573-b2525f80-d399-11e8-966c-c7ba6d0cbb60.png)
 
 ```
 $ cp .bash_profile .minttyrc .gitconfig ~

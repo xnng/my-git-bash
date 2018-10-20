@@ -3,6 +3,10 @@
     <img alt="Git Bash" src="https://user-images.githubusercontent.com/38936252/47200745-df0e7300-d3a9-11e8-96b3-7302e3634027.png" width="749">
 </p>
 
+## doc
+
+- [How to use git bash and hyper-v ?](https://github.com/xnng/xnng.github.io/issues/2)
+
 ## git bash settings
 
 ```

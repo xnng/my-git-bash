@@ -18,7 +18,7 @@ else
 	PS1="$PS1"'\[\033[35m\]'       # 粉红色
 	PS1="$PS1"'\t '				   # 时间
 	PS1="$PS1"'\[\033[33m\]'       # 黄色
-	PS1="$PS1"'\W '                # 当前目录
+	PS1="$PS1"'\W'                # 当前目录
 	if test -z "$WINELOADERNOEXEC"
 	then
 		GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
@@ -34,7 +34,7 @@ else
 		fi
 	fi
 	PS1="$PS1"'\[\033[0m\]'        # 灰色
-	PS1="$PS1"'$ '                 # 命令提示符
+	PS1="$PS1"' $ '                 # 命令提示符
 fi
 
 MSYS2_PS1="$PS1"               # for detection by MSYS2 SDK's bash.basrc

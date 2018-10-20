@@ -25,3 +25,8 @@ alias vmstart='powershell Start-VM -Name CentOS7'
 alias vmsave='powershell Save-VM -Name CentOS7'
 alias vmpush='scp -r /e/share/ root@vm.com:/root/'
 alias vmpull='scp -r root@vm.com:/root/share /e'
+
+alias codesettings='code ~/AppData/Roaming/Code/User'
+alias codesync='cp ~/AppData/Roaming/Code/User/snippets ~/AppData/Roaming/Code/User/keybindings.json \
+                ~/AppData/Roaming/Code/User/settings.json /e/doing/vscode-sync -r \
+                && cd /e/doing/vscode-sync && git add . && git commit -m update && git push'

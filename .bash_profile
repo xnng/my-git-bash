@@ -34,11 +34,13 @@ alias codesync='cp ~/AppData/Roaming/Code/User/snippets ~/AppData/Roaming/Code/U
 
 alias powerls='powercfg -list'
 alias powerp='powercfg -setactive 381b4222-f694-41f0-9685-ff5bb260df2e'
-alias powerc='powercfg -setactive 9c405ad9-e0e3-4db6-9bfb-6e73ac04ef5a'
-alias powerg='powercfg -setactive a5c8a72f-8554-4eb8-bd71-c8b975d9f247'
-alias powerz='powercfg -setactive 85cac18c-2df4-45af-b398-7854edbf4355'
-alias powerj='powercfg -setactive 84aa2535-0cc5-4458-b54c-329b2903df75'
+alias powerj='powercfg -setactive 68a61b87-5b81-4566-b5cf-c78e9bf42214'
+alias powerg='powercfg -setactive 69d33692-a27d-49e5-935a-10a795214e67'
+alias powerz='powercfg -setactive 87745074-d2aa-441f-87ed-7fd314a5ed9c'
+alias powers='powercfg -setactive 8b45989d-5b86-45f4-ada5-48b7f4379457'
 
 alias sysoff='shutdown -s -hybrid -t 0'
 alias sysoffs='shutdown -s -t 0'
 alias sysre='shutdown -r -t 0'
+
+alias host='code /c/Windows/System32/drivers/etc/hosts'

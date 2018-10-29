@@ -20,6 +20,8 @@ alias ga='git add .'
 alias gb='git branch'
 
 alias vmssh='ssh root@vm.com'
+alias vmsshv='ssh root@45.32.250.216'
+alias vmssha='ssh root@101.132.101.124'
 alias vmls='powershell Get-VM'
 alias vmstop='powershell Stop-VM -Name CentOS7'
 alias vmstart='powershell Start-VM -Name CentOS7'
@@ -44,3 +46,6 @@ alias sysoffs='shutdown -s -t 0'
 alias sysre='shutdown -r -t 0'
 
 alias host='code /c/Windows/System32/drivers/etc/hosts'
+
+alias uft8='sed -i 's/GBK/UTF-8/' ~/.minttyrc'
+alias gbk='sed -i 's/UTF-8/GBK/' ~/.minttyrc'

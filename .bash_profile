@@ -1,9 +1,9 @@
 alias bashalias='code ~/.bash_profile'
 alias bashcolor='code ~/.minttyrc'
 alias bashconfig='code /etc/profile.d/git-prompt.sh'
-alias bashsync='cp ~/.bash_profile ~/.minttyrc ~/.gitconfig /etc/profile.d/git-prompt.sh /e/doing/terminal-sync/ \
-                && cd /e/doing/terminal-sync \
-                && git add . && git commit -m update && git push'
+alias bashsync='cp ~/.bash_profile ~/.minttyrc ~/.gitconfig /etc/profile.d/git-prompt.sh ~/home/projects/finished/terminal-sync/ \
+                && cd ~/home/projects/finished/terminal-sync \
+                && git add . && git commit -m update && git push && cd -'
 
 alias ,='cd -'
 alias .='cd ~'
@@ -18,34 +18,33 @@ alias gp='git push'
 alias gl='git pull'
 alias ga='git add .'
 alias gb='git branch'
+alias gm='git merge'
 
-alias vmssh='ssh root@vm.com'
-alias vmsshv='ssh root@45.32.250.216'
-alias vmssha='ssh root@101.132.101.124'
-alias vmls='powershell Get-VM'
-alias vmstop='powershell Stop-VM -Name CentOS7'
-alias vmstart='powershell Start-VM -Name CentOS7'
-alias vmsave='powershell Save-VM -Name CentOS7'
-alias vmpush='scp -r /e/share/ root@vm.com:/root/'
-alias vmpull='scp -r root@vm.com:/root/share /e'
-
-alias codesettings='code ~/AppData/Roaming/Code/User'
-alias codesync='cp ~/AppData/Roaming/Code/User/snippets ~/AppData/Roaming/Code/User/keybindings.json \
-                ~/AppData/Roaming/Code/User/settings.json /e/doing/vscode-sync -r \
-                && cd /e/doing/vscode-sync && git add . && git commit -m update && git push'
+alias sshv='ssh root@45.32.250.216'
+alias ssha='ssh root@101.132.101.124'
+# alias vmssh='ssh root@vm.com'
+# alias vmls='powershell Get-VM'
+# alias vmstop='powershell Stop-VM -Name CentOS7'
+# alias vmstart='powershell Start-VM -Name CentOS7'
+# alias vmsave='powershell Save-VM -Name CentOS7'
+# alias vmpush='scp -r /e/share/ root@vm.com:/root/'
+# alias vmpull='scp -r root@vm.com:/root/share /e'
 
 alias powerls='powercfg -list'
 alias powerp='powercfg -setactive 381b4222-f694-41f0-9685-ff5bb260df2e'
-alias powerj='powercfg -setactive 68a61b87-5b81-4566-b5cf-c78e9bf42214'
-alias powerg='powercfg -setactive 69d33692-a27d-49e5-935a-10a795214e67'
-alias powerz='powercfg -setactive 87745074-d2aa-441f-87ed-7fd314a5ed9c'
-alias powers='powercfg -setactive 8b45989d-5b86-45f4-ada5-48b7f4379457'
+alias powerj='powercfg -setactive cd455189-d403-4cd1-8d85-f4a05e154633'
+alias powerg='powercfg -setactive fecbe033-bb03-4f9d-8d80-ca037f9dbd40'
+alias powerz='powercfg -setactive a1db411c-4ffc-4735-b498-97da0c177a36'
 
 alias sysoff='shutdown -s -hybrid -t 0'
 alias sysoffs='shutdown -s -t 0'
 alias sysre='shutdown -r -t 0'
 
 alias host='code /c/Windows/System32/drivers/etc/hosts'
+alias ep='explorer .'
 
 alias uft8='sed -i 's/GBK/UTF-8/' ~/.minttyrc'
 alias gbk='sed -i 's/UTF-8/GBK/' ~/.minttyrc'
+
+alias c='code .'
+alias cblog='code ~/home/projects/doing/blog/'

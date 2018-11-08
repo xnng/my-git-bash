@@ -34,6 +34,7 @@ alias powerls='powercfg -list'
 alias powerp='powercfg -setactive 381b4222-f694-41f0-9685-ff5bb260df2e'
 alias powerj='powercfg -setactive 09b48609-796e-4e17-aae1-97ca5d4a48ba'
 alias powerg='powercfg -setactive 20ca1057-c649-4618-ac04-012b9c81c742'
+alias powerz='powercfg -setactive 04ecc1aa-daf2-4274-9fdc-d54349eade0d'
 
 alias sysoff='shutdown -s -hybrid -t 0'
 alias sysoffs='shutdown -s -t 0'

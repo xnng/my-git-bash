@@ -1,9 +1,9 @@
 FontHeight=16
 Font=Consolas
-Transparency=low
+Transparency=off
 FontSmoothing=full
 Locale=zh_CN
-Charset=UTF-8
+Charset=GBK
 Columns=88
 Rows=26
 OpaqueWhenFocused=no

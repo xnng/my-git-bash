@@ -36,14 +36,13 @@ alias powerj='powercfg -setactive 09b48609-796e-4e17-aae1-97ca5d4a48ba'
 alias powerg='powercfg -setactive 20ca1057-c649-4618-ac04-012b9c81c742'
 alias powerz='powercfg -setactive 04ecc1aa-daf2-4274-9fdc-d54349eade0d'
 
-alias sysoff='shutdown -s -hybrid -t 0'
-alias sysoffs='shutdown -s -t 0'
+alias sysoff='shutdown -s -t 0'
 alias sysre='shutdown -r -t 0'
 
 alias host='code /c/Windows/System32/drivers/etc/hosts'
 alias ep='explorer .'
 
-alias uft8='sed -i 's/GBK/UTF-8/' ~/.minttyrc'
+alias utf8='sed -i 's/GBK/UTF-8/' ~/.minttyrc'
 alias gbk='sed -i 's/UTF-8/GBK/' ~/.minttyrc'
 
 alias c='code . && exit'

@@ -5,7 +5,7 @@
 
 ## doc
 
-- [How to use git bash and hyper-v ?](https://github.com/xnng/xnng.github.io/issues/2)
+- [How to use git bash and hyper-v ?](https://xnngs.cn/tools/bash.html)
 
 ## git bash settings
 

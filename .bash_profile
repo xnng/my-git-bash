@@ -20,15 +20,21 @@ alias ga='git add .'
 alias gb='git branch'
 alias gm='git merge'
 
+alias who-am-i="echo 'My nickname is xnng. I am a senior student in software major.'"
+alias where-am-i="echo 'Here is my personal blog, built by vuepress of Evan You.'"
+alias how-to-contact="echo 'Mailing to xnng77@gmail.com.
+---------------------------
+I am waiting for you!'"
+
 alias sshv='ssh root@45.32.250.216'
 alias ssha='ssh root@101.132.101.124'
-# alias vmssh='ssh root@vm.com'
-# alias vmls='powershell Get-VM'
-# alias vmstop='powershell Stop-VM -Name CentOS7'
-# alias vmstart='powershell Start-VM -Name CentOS7'
-# alias vmsave='powershell Save-VM -Name CentOS7'
-# alias vmpush='scp -r /e/share/ root@vm.com:/root/'
-# alias vmpull='scp -r root@vm.com:/root/share /e'
+alias vmssh='ssh root@vm.com'
+alias vmls='powershell Get-VM'
+alias vmstop='powershell Stop-VM -Name CentOS7'
+alias vmstart='powershell Start-VM -Name CentOS7'
+alias vmsave='powershell Save-VM -Name CentOS7'
+alias vmpush='scp -r /e/share/ root@vm.com:/root/'
+alias vmpull='scp -r root@vm.com:/root/share /e'
 
 alias powerls='powercfg -list'
 alias powerp='powercfg -setactive 381b4222-f694-41f0-9685-ff5bb260df2e'

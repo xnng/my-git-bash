@@ -9,28 +9,34 @@
 
 ## git bash settings
 
-```
+```bash
 $ cp .bash_profile .minttyrc .gitconfig ~
 $ cp git-prompt.sh /etc/profile.d
+```
+
+## install tree and wget
+
+```bash
+$ cp tree.exe wget /usr/bin
 ```
 
 ## centos settings
 
 - change mirrors to aliyun
 
-    ```sh
+    ```bash
     $ wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
     $ yum makecache
     ```
 
 - change hostname
 
-    ```sh
+    ```bash
     $ vi /etc/hostname
     ```
 
 - set static ip
-    ```sh
+    ```bash
     # create an external network and connect to it
     $ vi /etc/sysconfig/network-scripts/ifcfg-eth0
 
@@ -45,7 +51,7 @@ $ cp git-prompt.sh /etc/profile.d
 
 - install oh-my-zsh
 
-    ```sh
+    ```bash
     $ yum install -y zsh
     $ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
     $ chsh -s /bin/zsh
@@ -54,7 +60,7 @@ $ cp git-prompt.sh /etc/profile.d
 
 - install docker
 
-    ```sh
+    ```bash
     # docker-ce
     $ yum install -y yum-utils device-mapper-persistent-data lvm2
     $ yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo

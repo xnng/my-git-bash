@@ -1,8 +1,8 @@
 FontHeight=16
-Font=Consolas
-Transparency=off
-FontSmoothing=full
-Locale=zh_CN
+Font=Lucida Console
+Transparency=low
+FontSmoothing=default
+Locale=en_US
 Charset=UTF-8
 Columns=88
 Rows=26

@@ -1,8 +1,8 @@
 FontHeight=16
-Font=Lucida Console
+Font=DejaVu Sans Mono for Powerline
 Transparency=low
 FontSmoothing=default
-Locale=en_US
+Locale=C
 Charset=UTF-8
 Columns=88
 Rows=26

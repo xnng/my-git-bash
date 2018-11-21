@@ -1,77 +1,43 @@
-<h4 align="center">Git Bash + Hyper-V + CentOS7 On Windows</h4>
+<h4 align="center"> My Git Bash</h4>
 <p align="center">
     <img alt="Git Bash" src="https://user-images.githubusercontent.com/38936252/47200745-df0e7300-d3a9-11e8-96b3-7302e3634027.png" width="749">
 </p>
 
-## doc
-
-- [How to use git bash and hyper-v ?](https://xnngs.cn/tools/bash.html)
-
-## git bash settings
+## 外观和主题
 
 ```bash
-$ cp .bash_profile .minttyrc .gitconfig ~
+$ git clone https://github.com/xnng/terminal-sync.git
+$ cd terminal-sync
+$ cp .minttyrc ~
 $ cp git-prompt.sh /etc/profile.d
 ```
 
-## install tree and wget
+## 我的 `alias`
 
 ```bash
-$ cp tree.exe wget /usr/bin
+$ cp .bash_profile ~
 ```
 
-## centos settings
+## 安装 `tree` 和 `wget` 命令
 
-- change mirrors to aliyun
+```bash
+$ cp tools/* /usr/bin
+```
 
-    ```bash
-    $ wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
-    $ yum makecache
-    ```
+## 安装 `DejaVu Sans Mono Bold` 字体
 
-- change hostname
+执行如下命令，如果终端能够正常显示箭头而不是方框则无需安装此字体。
 
-    ```bash
-    $ vi /etc/hostname
-    ```
+```bash
+$ echo ➜
+```
 
-- set static ip
-    ```bash
-    # create an external network and connect to it
-    $ vi /etc/sysconfig/network-scripts/ifcfg-eth0
+部分版本的 `windows` 上的 `Git Bash` 会出现 `unicode` 字符显示异常的现象，安装此字体可解决。
 
-    BOOTPROTO=static-ip
-    IPADDR=192.168.xx.x (ipconfig)
-    GATEWAY=192.168.xx.x
-    DNS1=114.114.114.114 (baidu DNS)
-    NETMASK=255.255.255.0
+依次打开「控制面板」-「外观和个性化」-「字体」，将 `fonts` 文件夹中的内容复制到该文件夹中。然后在 `Git Bash` 的选项中可选择此字体。
 
-    $ systemctl restart network
-    ```
-
-- install oh-my-zsh
-
-    ```bash
-    $ yum install -y zsh
-    $ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
-    $ chsh -s /bin/zsh
-    $ vi ~/.zshrc # change theme to steeef
-    ```
-
-- install docker
-
-    ```bash
-    # docker-ce
-    $ yum install -y yum-utils device-mapper-persistent-data lvm2
-    $ yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
-    $ yum makecache fast
-    $ yum -y install docker-ce
-    $ service docker start
-    # docker-compose
-    $ curl -L https://get.daocloud.io/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-    $ chmod 777 /usr/local/bin/docker-compose
-    ```
+![image](https://user-images.githubusercontent.com/38936252/48838951-e2d84f80-edc4-11e8-9556-b29e26cab818.png)
 
 ## License
 
-MIT
+[MIT](./LICENSE)

@@ -48,6 +48,8 @@ $ echo ➜
 
 ![image](https://user-images.githubusercontent.com/38936252/48838951-e2d84f80-edc4-11e8-9556-b29e26cab818.png)
 
+[点此下载更多字体](https://github.com/powerline/fonts)
+
 ## License
 
 [MIT](./LICENSE)

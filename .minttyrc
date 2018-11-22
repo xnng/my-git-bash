@@ -1,5 +1,5 @@
-FontHeight=16
 Font=DejaVu Sans Mono for Powerline
+FontHeight=14
 Transparency=low
 FontSmoothing=default
 Locale=C
@@ -31,3 +31,6 @@ White=200,200,200
 BoldWhite=255,255,255
 
 BellTaskbar=no
+Term=xterm
+FontWeight=400
+FontIsBold=no

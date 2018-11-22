@@ -1,6 +1,7 @@
 alias bashalias='code ~/.bash_profile'
 alias bashcolor='code ~/.minttyrc'
 alias bashconfig='code /etc/profile.d/git-prompt.sh'
+alias gitconfig='code ~/.gitconfig'
 alias bashsync='cp ~/.bash_profile ~/.minttyrc ~/.gitconfig /etc/profile.d/git-prompt.sh ~/home/projects/finished/terminal-sync/ \
                 && cd ~/home/projects/finished/terminal-sync \
                 && git add . && git commit -m update && git push && cd -'

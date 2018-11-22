@@ -33,6 +33,20 @@ $ cp tmux/bin/* /usr/bin
 $ cp tmux/share/* /usr/share -r
 ```
 
+创建配置文件支持鼠标拖动窗口分隔线
+
+```bash
+$ vim ~/.tmux.conf
+```
+
+```bash
+setw -g mouse
+set-option -g history-limit 20000
+set-option -g mouse on
+bind -n WheelUpPane select-pane -t= \; copy-mode -e \; send-keys -M
+bind -n WheelDownPane select-pane -t= \; send-keys -M
+```
+
 感谢 hongwenjun 提取的 [tmux for windows](https://github.com/hongwenjun/tmux_for_windows)
 
 ## 设置代理、用户信息和字符编码

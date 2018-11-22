@@ -26,6 +26,15 @@ $ cp .bash_profile ~
 $ cp tools/* /usr/bin
 ```
 
+## 安装 `tmux`
+
+```bash
+$ cp tmux/bin/* /usr/bin
+$ cp tmux/share/* /usr/share
+```
+
+感谢 hongwenjun 提取的 [tmux for windows](https://github.com/hongwenjun/tmux_for_windows)
+
 ## 设置代理、用户信息和字符编码
 
 `.gitconfig` 文件包含我的用户信息、代理设置和更详细的字符编码设置，根据情况更改成自己的信息后执行以下命令可生效

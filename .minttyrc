@@ -1,17 +1,19 @@
 Font=DejaVu Sans Mono for Powerline
 FontHeight=14
+FontSize=14
 Transparency=low
 FontSmoothing=default
 Locale=C
 Charset=UTF-8
-Columns=82
-Rows=24
+Columns=86
+Rows=26
 OpaqueWhenFocused=no
 Scrollbar=none
 Language=zh_CN
 
 ForegroundColour=131,148,150
 BackgroundColour=0,43,54
+# BackgroundColour=245,245,245
 CursorColour=220,130,71
 
 BoldBlack=128,128,128

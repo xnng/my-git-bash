@@ -3,7 +3,7 @@
     <img alt="Git Bash" src="https://user-images.githubusercontent.com/38936252/47200745-df0e7300-d3a9-11e8-96b3-7302e3634027.png" width="749">
 </p>
 
->以下所有命令都需在 `Git Bash` 或任一基于 `mintty` 的终端中执行。
+>以下所有命令都需在 `Git Bash` 中执行。
 
 ## 外观和主题
 
@@ -30,7 +30,7 @@ $ cp tools/* /usr/bin
 
 ```bash
 $ cp tmux/bin/* /usr/bin
-$ cp tmux/share/* /usr/share
+$ cp tmux/share/* /usr/share -r
 ```
 
 感谢 hongwenjun 提取的 [tmux for windows](https://github.com/hongwenjun/tmux_for_windows)

@@ -2,7 +2,7 @@ alias bashalias='code ~/.bash_profile'
 alias bashcolor='code ~/.minttyrc'
 alias bashconfig='code /etc/profile.d/git-prompt.sh'
 alias gitconfig='code ~/.gitconfig'
-alias bashsync='cp ~/.bash_profile ~/.minttyrc ~/.gitconfig /etc/profile.d/git-prompt.sh ~/home/projects/doing/bash/ \
+alias bashsync='cp ~/.bash_profile ~/.minttyrc ~/.gitconfig /etc/profile.d/git-prompt.sh ~/.vimrc ~/home/projects/doing/bash/ \
                 && cd ~/home/projects/doing/bash \
                 && git add . && git commit -m update && git push origin master && git push gitee master && cd -'
 

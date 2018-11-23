@@ -25,11 +25,11 @@ bind -n WheelDownPane select-pane -t= \; send-keys -M" > ~/.tmux.conf \
 && cp .vimrc ~ \
 && echo "-------install fonts" \
 && cd /c/Windows/Fonts \
-&& explorer . \
-&& cd - \
-&& cd fonts \
-&& explorer . \
-&& cd ../ \
-&& echo -e "please copy 'DejaVu Sans Mono for Powerline.tty' to 'C:/Windows/Fonts' by your hands \n
+& explorer . \
+& cd - \
+& cd fonts \
+& explorer . \
+& cd ../ \
+& echo -e "please copy 'DejaVu Sans Mono for Powerline.tty' to 'C:/Windows/Fonts' by your hands \n
 I can't do this by terminal" \
 && echo "enjoy it !"

@@ -22,15 +22,15 @@ bind -n WheelDownPane select-pane -t= \; send-keys -M" > ~/.tmux.conf \
 && echo "-------configuration vim" \
 && mkdir -p ~/.vim/colors \
 && cp vim-theme/colors/molokai.vim ~/.vim/colors/ \
-&& echo -e "# 配置主题 \n
+&& echo -e "\" 配置主题 \n
 set t_Co=256 \n
 set background=dark \n
 color molokai \n
 let g:molokai_original=1 \n
 let g:rehash256=1 \n
-# 支持鼠标操作 \n
+\" 支持鼠标操作 \n
 set mouse=a \n
-# 显示行号 \n
+\" 显示行号 \n
 set nu" > ~/.vimrc \
 && echo "-------clean repository" \
 && rm bash -rf \

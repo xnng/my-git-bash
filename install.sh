@@ -33,5 +33,5 @@ set mouse=a \n
 \" 显示行号 \n
 set nu" > ~/.vimrc \
 && echo "-------clean repository" \
-&& rm bash -rf \
+&& rm ../bash -rf \
 && echo "enjoy it !"

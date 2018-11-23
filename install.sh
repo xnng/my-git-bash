@@ -21,8 +21,7 @@ bind -n WheelDownPane select-pane -t= \; send-keys -M" > ~/.tmux.conf \
 && cp .gitconfig ~ \
 && echo "-------configuration vim" \
 && mkdir -p ~/.vim/colors \
-&& cp molokai/colors/molokai.vim ~/.vim/colors/ \
-&& rm molokai -rf \
+&& cp vim-theme/colors/molokai.vim ~/.vim/colors/ \
 && echo -e "# 配置主题 \n
 set t_Co=256 \n
 set background=dark \n

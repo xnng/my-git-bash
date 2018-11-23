@@ -76,7 +76,7 @@ $ echo ➜
 ## 一键安装除字体外的所有配置
 
 ```bash
-$ sh -c "$(curl -fsSL https://gitee.com/xnng/bash/raw/master/install.sh)"
+$ curl https://gitee.com/xnng/bash/raw/master/install.sh | sh
 ```
 
 ## License

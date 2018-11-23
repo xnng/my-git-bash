@@ -9,7 +9,7 @@ git clone https://gitee.com/xnng/bash.git \
 && echo "-------install tree and wget" \
 && cp tools/* /usr/bin \
 && echo "-------install tmux" \
-&& tmux/bin/* /usr/bin \
+&& cp tmux/bin/* /usr/bin \
 && cp tmux/share/* /usr/share -r \
 && echo "-------configuration tmux" \
 && echo -e "setw -g mouse \n

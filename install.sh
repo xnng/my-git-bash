@@ -8,8 +8,6 @@ git clone https://gitee.com/xnng/bash.git \
 && cp .bash_profile ~ \
 && echo "-------install tree and wget" \
 && cp tools/* /usr/bin \
-&& echo "-------install fonts" \
-&& cp fonts/* /c/Windows/Fonts \
 && echo "-------install tmux" \
 && cp tmux/bin/* /usr/bin \
 && cp tmux/share/* /usr/share -r \
@@ -25,6 +23,13 @@ bind -n WheelDownPane select-pane -t= \; send-keys -M" > ~/.tmux.conf \
 && mkdir -p ~/.vim/colors \
 && cp vim-theme/colors/molokai.vim ~/.vim/colors/ \
 && cp .vimrc ~ \
-&& echo "-------clean repository" \
-&& rm ../bash -rf \
+&& echo "-------install fonts" \
+&& cd /c/Windows/Fonts \
+&& explorer . \
+&& cd - \
+&& cd fonts \
+&& explorer . \
+&& cd ../ \
+&& echo -e "please copy 'DejaVu Sans Mono for Powerline.tty' to 'C:/Windows/Fonts' by your hands \n
+I can't do this by terminal"
 && echo "enjoy it !"

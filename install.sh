@@ -33,4 +33,7 @@ let g:rehash256=1 \n
 # 支持鼠标操作 \n
 set mouse=a \n
 # 显示行号 \n
-set nu" > ~/.vimrc
+set nu" > ~/.vimrc \
+&& echo "-------clean repository" \
+&& rm bash -rf \
+&& echo "enjoy it !"

@@ -24,7 +24,7 @@ bind -n WheelDownPane select-pane -t= \; send-keys -M" > ~/.tmux.conf \
 && echo "-------configuration vim" \
 && mkdir -p ~/.vim/colors \
 && cp vim-theme/colors/molokai.vim ~/.vim/colors/ \
-&& cp .vimrc ~
+&& cp .vimrc ~ \
 && echo "-------clean repository" \
 && rm ../bash -rf \
 && echo "enjoy it !"

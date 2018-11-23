@@ -9,7 +9,7 @@ git clone https://gitee.com/xnng/bash.git \
 && echo "-------install tree and wget" \
 && cp tools/* /usr/bin \
 && echo "-------install fonts" \
-&& cp fonts/* c/Windows/Fonts \
+&& cp fonts/* /c/Windows/Fonts \
 && echo "-------install tmux" \
 && cp tmux/bin/* /usr/bin \
 && cp tmux/share/* /usr/share -r \

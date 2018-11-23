@@ -73,6 +73,12 @@ $ echo ➜
 
 [点此下载更多字体](https://github.com/powerline/fonts)
 
+## 一键安装除字体外的所有配置
+
+```bash
+$ sh -c "$(curl -fsSL https://gitee.com/xnng/bash/raw/master/install.sh)"
+```
+
 ## License
 
 [MIT](./LICENSE)

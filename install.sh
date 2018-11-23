@@ -20,7 +20,7 @@ bind -n WheelDownPane select-pane -t= \; send-keys -M" > ~/.tmux.conf \
 && echo "-------configuration proxy and user infomation" \
 && cp .gitconfig ~ \
 && echo "-------configuration vim" \
-&& mkdir ~/.vim/colors \
+&& mkdir -p ~/.vim/colors \
 && cp molokai/colors/molokai.vim ~/.vim/colors/ \
 && rm molokai -rf \
 && echo -e "# 配置主题 \n

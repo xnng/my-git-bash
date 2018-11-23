@@ -23,7 +23,7 @@ $ curl https://gitee.com/xnng/bash/raw/master/install.sh | sh
 
 如果你不需要我的那么多配置，或者想知道如何自定义配置，就接着往下看：
 
-### 外观和主题
+### 安装主题
 
 ```bash
 $ git clone https://github.com/xnng/terminal-sync.git
@@ -32,19 +32,11 @@ $ cp .minttyrc ~
 $ cp git-prompt.sh /etc/profile.d
 ```
 
-### 我的 `alias`
-
-```bash
-$ cp .bash_profile ~
-```
-
-### 安装 `tree` 和 `wget` 命令
-
-```bash
-$ cp tools/* /usr/bin
-```
-
 ### 安装 `tmux`
+
+tmux 是一个终端复用神器，可解决 `Git Bash` 没有多标签功能的问题。
+
+tmux 入门可参考掘金的[这篇文章](https://juejin.im/post/5a8917336fb9a0633e51ddb9)。
 
 ```bash
 $ cp tmux/bin/* /usr/bin
@@ -65,15 +57,7 @@ bind -n WheelUpPane select-pane -t= \; copy-mode -e \; send-keys -M
 bind -n WheelDownPane select-pane -t= \; send-keys -M
 ```
 
-感谢 hongwenjun 提取的 [tmux for windows](https://github.com/hongwenjun/tmux_for_windows)
-
-### 设置代理、用户信息和字符编码
-
-`.gitconfig` 文件包含我的用户信息、代理设置和更详细的字符编码设置，根据情况更改成自己的信息后执行以下命令可生效
-
-```bash
-$ cp .gitconfig ~
-```
+这里还要感谢 hongwenjun 提取的 [tmux for windows](https://github.com/hongwenjun/tmux_for_windows)
 
 ### 安装 `DejaVu Sans Mono Bold` 字体
 
@@ -90,6 +74,10 @@ $ echo ➜
 ![](https://user-images.githubusercontent.com/38936252/48935544-fad5dd80-ef42-11e8-9ab8-d8df8605a68c.png)
 
 [点此下载更多字体](https://github.com/powerline/fonts)
+
+### 其他
+
+先说到这里，其它的有空再写。。。
 
 ## License
 

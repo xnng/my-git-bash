@@ -3,7 +3,7 @@
     <img alt="Git Bash" src="https://user-images.githubusercontent.com/38936252/48936837-180cab00-ef47-11e8-8925-71eea5980e74.png" width="750">
 </p>
 
->以下所有命令都需在 `Git Bash` 中执行。
+> 以下所有命令都需在 `Git Bash` 中执行。
 
 ## 一键配置
 
@@ -26,11 +26,13 @@ $ curl https://gitee.com/xnng/bash/raw/master/install.sh | sh
 ### 安装主题
 
 ```bash
-$ git clone https://github.com/xnng/terminal-sync.git
-$ cd terminal-sync
+$ git clone https://github.com/xnng/bash.git
+$ cd bash
 $ cp .minttyrc ~
 $ cp git-prompt.sh /etc/profile.d
 ```
+
+如果你想知道如何修改 `git-prompt.sh` 文件，可以参考[这篇文章](http://www.voidcn.com/article/p-wavhthxe-tr.html)。
 
 ### 安装 `tmux`
 
@@ -39,6 +41,8 @@ tmux 是一个终端复用神器，可解决 `Git Bash` 没有多标签功能的
 tmux 入门可参考掘金的[这篇文章](https://juejin.im/post/5a8917336fb9a0633e51ddb9)。
 
 ```bash
+$ git clone https://github.com/xnng/bash.git
+$ cd bash
 $ cp tmux/bin/* /usr/bin
 $ cp tmux/share/* /usr/share -r
 ```
@@ -75,9 +79,38 @@ $ echo ➜
 
 [点此下载更多字体](https://github.com/powerline/fonts)
 
-### 其他
+### 安装 wget 和 tree 命令
 
-就说到这里吧，其它的请自行探索。。。
+```bash
+$ git clone https://github.com/xnng/bash.git
+$ cd bash
+$ cp tools/* /usr/bin
+```
+
+## 杂谈
+
+这个可以说是我目前能够配置的最好的终端了，日常使用基本足够。如果想要 Linux 系统的话，不妨试试虚拟机、Docker for windows、云服务器或是微软推出的 Linux 子系统 wsl。
+
+在 `Git Bash` 中用如下方式可进入 wsl。
+
+```
+$ winpty wsl
+```
+
+![](https://user-images.githubusercontent.com/38936252/48980806-be53de80-f108-11e8-8781-4bf4c508cd7c.gif)
+
+>其实一般我是不用 wsl 的，它目前的性能和兼容性还不是很好，期待未来它能有更大的作用。我一般会安装 Docker for windows，普通的项目就在 docker 容器中跑。如果有更多的需求会直接 ssh 到服务器中。
+
+如果你想在 VSCode 中使用 `Git Bash`，也是一个很不错的选择，只需要在 `settings.json` 中添加如下配置即可，其他开发工具类似：
+
+```json
+{
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.shellArgs.windows": ["--login", "-i"]
+}
+```
+
+![](https://user-images.githubusercontent.com/38936252/48980950-7b930600-f10a-11e8-9d8c-4c95de7327df.png)
 
 ## License
 

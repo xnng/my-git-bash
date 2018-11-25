@@ -20,12 +20,6 @@ alias gp='git push'
 alias gl='git pull'
 alias ga='git add .'
 
-alias who-am-i="echo 'My nickname is xnng. I am a senior student in software major.'"
-alias where-am-i="echo 'Here is my personal blog, built by vuepress of Evan You.'"
-alias how-to-contact="echo 'Mailing to xnng77@gmail.com.
----------------------------
-I am waiting for you!'"
-
 alias sshv='ssh root@45.32.250.216'
 alias ssha='ssh root@101.132.101.124'
 alias vmssh='ssh root@vm.com'
@@ -54,3 +48,6 @@ alias gbk='sed -i 's/UTF-8/GBK/' ~/.minttyrc'
 
 alias tree1='tree -L 1'
 alias tree2='tree -L 2'
+
+alias tn='tmux new -s work'
+alias tr='tmux a'

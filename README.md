@@ -75,7 +75,7 @@ $ echo ➜
 
 依次打开「控制面板」-「外观和个性化」-「字体」，将 `fonts` 文件夹中的内容复制到该文件夹中。然后在 `Git Bash` 的选项中可选择此字体。
 
-![](https://user-images.githubusercontent.com/38936252/48935544-fad5dd80-ef42-11e8-9ab8-d8df8605a68c.png)
+<img alt="Git Bash" src="https://user-images.githubusercontent.com/38936252/48935544-fad5dd80-ef42-11e8-9ab8-d8df8605a68c.png" width="750">
 
 [点此下载更多字体](https://github.com/powerline/fonts)
 
@@ -97,7 +97,7 @@ $ cp tools/* /usr/bin
 $ winpty wsl
 ```
 
-![](https://user-images.githubusercontent.com/38936252/48980806-be53de80-f108-11e8-8781-4bf4c508cd7c.gif)
+<img alt="Git Bash" src="https://user-images.githubusercontent.com/38936252/48980806-be53de80-f108-11e8-8781-4bf4c508cd7c.gif" width="750">
 
 >其实一般我是不用 wsl 的，它目前的性能和兼容性还不是很好，期待未来它能有更大的作用。我一般会安装 Docker for windows，普通的项目就在 docker 容器中跑。如果有更多的需求会直接 ssh 到服务器中。
 
@@ -110,7 +110,21 @@ $ winpty wsl
 }
 ```
 
-![](https://user-images.githubusercontent.com/38936252/48980950-7b930600-f10a-11e8-9d8c-4c95de7327df.png)
+<img alt="Git Bash" src="https://user-images.githubusercontent.com/38936252/48980950-7b930600-f10a-11e8-9d8c-4c95de7327df.png" width="750">
+
+最后再说一下如何给 Git Bash 添加快捷键吧
+
+搜索 `Git Bash`，然后打开文件所在位置
+
+<img alt="Git Bash" src="https://user-images.githubusercontent.com/38936252/48981059-daa54a80-f10b-11e8-8ba3-f99a9b3f74a6.png" width="750">
+
+然后右键点击快捷方式，就能设置了
+
+<img alt="Git Bash" src="https://user-images.githubusercontent.com/38936252/48981096-3079f280-f10c-11e8-95ca-545fa55904b8.png" width="750">
+
+Windows 的某些版本会出现快捷键打开程序有 3 秒延迟的情况，这个时候禁用掉 `sysMain` 服务即可，如果你找不到这个服务，那么你应该是在用版本较低的 windows，找到它的原名 `superFetch` 也是可以的，禁用后重启电脑即可生效。
+
+
 
 ## License
 

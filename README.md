@@ -11,9 +11,9 @@
 $ curl https://gitee.com/xnng/bash/raw/master/install.sh | sh
 ```
 
-执行以上命令即可安装我的所有配置，其中有
+执行以上命令即可安装我的所有配置，其中有:
 
->- 一套配色完善的 `Git Bash` 主题 (仿 oh-my-zsh 默认主题)
+- 一套配色完善的 `Git Bash` 主题 (仿 oh-my-zsh 默认主题)
 - 我常用的 alias
 - tree 和 wget 命令
 - 终端复用神器 `tmux` (已默认开启鼠标操作)、

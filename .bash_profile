@@ -19,6 +19,7 @@ alias gc='git commit -m'
 alias gp='git push'
 alias gl='git pull'
 alias ga='git add .'
+alias gitauto='git add . && git commit -m "auto deploy" && git push'
 
 alias sshv='ssh root@45.32.250.216'
 alias ssha='ssh root@101.132.101.124'
@@ -51,3 +52,5 @@ alias tree2='tree -L 2'
 
 alias tn='tmux new -s work'
 alias tr='tmux a'
+
+alias b='code /c/Users/xnng/home/projects/doing/blog && exit'

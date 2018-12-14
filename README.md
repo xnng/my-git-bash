@@ -27,7 +27,7 @@ $ curl https://gitee.com/xnng/bash/raw/master/install.sh | sh
 
 ## 按需配置
 
-- [在 Windows 一键上打造体验良好的 Linux 终端](https://xnng.github.io/posts/bash-on-windows.html)
+- [在 Windows 一键上打造体验良好的 Linux 终端](https://xnngs.cn/new/terminal.html)
 
 ## License
 

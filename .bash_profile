@@ -6,7 +6,7 @@ alias bashsource='source ~/.bash_profile'
 alias bashbaklocal='cp ~/.bash_profile ~/.minttyrc ~/.gitconfig /etc/profile.d/git-prompt.sh ~/OneDrive/backups/bash \
                     && cp ~/.tmux.conf ~/OneDrive/backups/bash/tmux'
 alias bashbakremote="cd ~/OneDrive/backups/bash \
-                    && gitauto \
+                    && git add . && git commit -m 'auto deploy' && git push \
                     && ga && gc 'auto deploy' && gp master \
                     && cd -"
 

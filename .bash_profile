@@ -2,8 +2,13 @@ alias bashalias='code ~/.bash_profile'
 alias bashcolor='code ~/.minttyrc'
 alias bashconfig='code /etc/profile.d/git-prompt.sh'
 alias gitconfig='code ~/.gitconfig'
-alias bashbak='cp ~/.bash_profile ~/.minttyrc ~/.gitconfig /etc/profile.d/git-prompt.sh ~/OneDrive/backups/bash \
-               && cp ~/.tmux.conf ~/OneDrive/backups/bash/tmux'
+alias bashsource='source ~/.bash_profile'
+alias bashbaklocal='cp ~/.bash_profile ~/.minttyrc ~/.gitconfig /etc/profile.d/git-prompt.sh ~/OneDrive/backups/bash \
+                    && cp ~/.tmux.conf ~/OneDrive/backups/bash/tmux'
+alias bashbakremote='cd ~/OneDrive/backups/bash \
+                    && gitauto \
+                    && ga && gc auto deploy && gp master
+                    && cd -'
 
 alias ,='cd -'
 alias .='cd ~'

@@ -5,10 +5,10 @@ alias gitconfig='code ~/.gitconfig'
 alias bashsource='source ~/.bash_profile'
 alias bashbaklocal='cp ~/.bash_profile ~/.minttyrc ~/.gitconfig /etc/profile.d/git-prompt.sh ~/OneDrive/backups/bash \
                     && cp ~/.tmux.conf ~/OneDrive/backups/bash/tmux'
-alias bashbakremote='cd ~/OneDrive/backups/bash \
+alias bashbakremote="cd ~/OneDrive/backups/bash \
                     && gitauto \
-                    && ga && gc auto deploy && gp master \
-                    && cd -'
+                    && ga && gc 'auto deploy' && gp master \
+                    && cd -"
 
 alias ,='cd -'
 alias .='cd ~'

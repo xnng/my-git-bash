@@ -7,7 +7,7 @@ alias bashbaklocal='cp ~/.bash_profile ~/.minttyrc ~/.gitconfig /etc/profile.d/g
                     && cp ~/.tmux.conf ~/OneDrive/backups/bash/tmux'
 alias bashbakremote='cd ~/OneDrive/backups/bash \
                     && gitauto \
-                    && ga && gc auto deploy && gp master
+                    && ga && gc auto deploy && gp master \
                     && cd -'
 
 alias ,='cd -'

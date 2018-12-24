@@ -11,12 +11,10 @@ git clone https://gitee.com/xnng/bash.git \
 && echo "-------install tmux" \
 && cp tmux/bin/* /usr/bin \
 && cp tmux/share/* /usr/share -r \
-&& echo "-------configuration tmux" \
-&& echo -e "setw -g mouse \n
-set-option -g history-limit 20000 \n
-set-option -g mouse on \n
-bind -n WheelUpPane select-pane -t= \; copy-mode -e \; send-keys -M \n
-bind -n WheelDownPane select-pane -t= \; send-keys -M" > ~/.tmux.conf \
+&& echo "-------install tmux plugins" \
+&& "git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm" \
+&& "cp tmux/.tmux.conf ~" \
+&& echo "press 'prefix I' to install plugins" \
 && echo "-------configuration proxy and user infomation" \
 && cp .gitconfig ~ \
 && echo "-------configuration vim" \
@@ -26,5 +24,5 @@ bind -n WheelDownPane select-pane -t= \; send-keys -M" > ~/.tmux.conf \
 && echo "-------install fonts" \
 && start c://Windows//Fonts \
 && start %cd%/fonts \
-&& echo -e "please copy 'DejaVu Sans Mono for Powerline.tty' to 'C:/Windows/Fonts' by your hands" \
-&& echo "Doing this by yourself, and enjoy it !"
+&& echo "please copy 'DejaVu Sans Mono for Powerline.tty' to 'C:/Windows/Fonts' by your hands" \
+&& echo "enjoy it !"

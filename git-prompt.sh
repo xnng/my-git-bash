@@ -9,7 +9,7 @@ if test -f ~/.config/git/git-prompt.sh
 then
 	. ~/.config/git/git-prompt.sh
 else
-	PS1='\[\033]0;Bash\007\]'      # 窗口标题
+	PS1='\[\033]0;bash in \w\007\]'      # 窗口标题
 	PS1="$PS1"'\n'                 # 换行
 	PS1="$PS1"'\[\033[32;1m\]'       # 绿色
 	PS1="$PS1"'➜  '

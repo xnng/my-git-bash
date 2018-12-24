@@ -16,7 +16,7 @@ $ curl https://gitee.com/xnng/bash/raw/master/install.sh | sh
 - 一套配色完善的 `Git Bash` 主题 (仿 oh-my-zsh 默认主题)
 - 我常用的 alias
 - tree 和 wget 命令
-- 终端复用神器 `tmux` (已默认开启鼠标操作)、
+- 终端复用神器 `tmux` (包含插件)、
 - `DejaVu Sans Mono Bold` 字体 (可正常显示 unicode 字符)、
 - `vim` 主题 `molokai` (已默认开启鼠标操作)
 - utf8 字符集设置 (大多数情况下可正常显示中文)
@@ -28,6 +28,14 @@ $ curl https://gitee.com/xnng/bash/raw/master/install.sh | sh
 ## 按需配置
 
 - [在 Windows 一键上打造体验良好的 Linux 终端](https://xnngs.cn/new/terminal.html)
+
+## 更新日志
+
+- 2018-12-24 
+  
+  - 新增 tmux 插件使 session 能持久化到本地
+  - 终端背景色由绿色修改为灰色
+  - 将红色颜色配置由橙色改回红色
 
 ## License
 

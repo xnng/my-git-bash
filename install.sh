@@ -12,15 +12,12 @@ git clone https://gitee.com/xnng/bash.git \
 && cp tmux/bin/* /usr/bin \
 && cp tmux/share/* /usr/share -r \
 && echo "-------install tmux plugins" \
+&& mkdir -p ~/.tmux/plugins/tpm \
 && "git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm" \
 && "cp tmux/.tmux.conf ~" \
 && echo "press 'prefix I' to install plugins" \
 && echo "-------configuration proxy and user infomation" \
 && cp .gitconfig ~ \
-&& echo "-------configuration vim" \
-&& mkdir -p ~/.vim/colors \
-&& cp vim-theme/colors/molokai.vim ~/.vim/colors/ \
-&& cp .vimrc ~ \
 && echo "-------install fonts" \
 && start c://Windows//Fonts \
 && start %cd%/fonts \

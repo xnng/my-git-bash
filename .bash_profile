@@ -4,10 +4,10 @@ alias bashconfig='code /etc/profile.d/git-prompt.sh'
 alias gitconfig='code ~/.gitconfig'
 alias bashsource='source ~/.bash_profile'
 alias bashbaklocal='cp ~/.bash_profile ~/.minttyrc ~/.gitconfig /etc/profile.d/git-prompt.sh ~/OneDrive/backups/bash \
-                    && cp ~/.tmux.conf ~/OneDrive/backups/bash/tmux'
+                    && cp ~/.tmux.conf ~/.tmux ~/OneDrive/backups/bash/tmux -r'
 alias bashbakremote="cd ~/OneDrive/backups/bash \
                     && git add . && git commit -m 'auto deploy' && git push origin master \
-                    && git add . && git commit -m 'auto deploy' && git push gitee master \
+                    && git push gitee master \
                     && cd -"
 
 alias ,='cd -'
@@ -17,15 +17,18 @@ alias ...='cd ../..'
 alias e='exit'
 alias cls='clear'
 
+alias ga='git add .'
 alias gc='git commit -m'
 alias gp='git push'
-alias ga='git add .'
+alias gs='git status'
+alias gl='git pull'
 alias gb='git branch'
+alias gch='git checkout'
 alias gm='git merge'
 alias gitauto='git add . && git commit -m "auto deploy" && git push'
 
 alias sshv='ssh root@45.32.250.216'
-alias ssha='ssh root@101.132.101.124'
+alias ssha='ssh root@120.77.221.126'
 alias vmssh='ssh root@192.168.43.43'
 alias vmls='powershell Get-VM'
 alias vmstop='powershell Stop-VM -Name centos7'
@@ -56,6 +59,8 @@ alias tn='tmux new -s m'
 alias ta='tmux a'
 alias tk='tmux kill-session -t'
 alias tl='tmux ls'
+alias tconfig='code ~/.tmux.conf'
+alias tsource='source ~/.tmux.conf'
 alias th="echo 'rename session: prefix $'"
 
 alias mwsl='winpty wsl'
@@ -67,4 +72,4 @@ alias yarnproxy='yarn config set proxy http://127.0.0.1:1080 \
                 && yarn config set https-proxy http://127.0.0.1:1080'
 alias yarndeleteproxy='yarn config delete proxy \
                 && yarn config delete https-proxy'
-alias yarndeleteregistry='yarn config delete reigstry'
+alias yarndeleteregistry='yarn config delete registry'

@@ -3,9 +3,7 @@
     <img alt="Git Bash" src="https://user-images.githubusercontent.com/38936252/52173922-dbbbbd80-27c7-11e9-8181-4928ce4087b3.png" width="750">
 </p>
 
-> 以下所有命令都需在 `Git Bash` 中执行。
-
-## 一键配置
+## Installation
 
 ```bash
 $ curl https://gitee.com/xnng/bash/raw/master/install.sh | sh
@@ -13,16 +11,17 @@ $ curl https://gitee.com/xnng/bash/raw/master/install.sh | sh
 
 >用管理员身份打开 `Git Bash`，然后再运行命令，期间会开两个窗口，需要手动复制下文件，这个过程是在安装字体，命令无法操作，[动图演示](https://xnngs.oss-cn-shanghai.aliyuncs.com/img/bash.gif)
 
-## 按需配置
+## Documentation
 
-- [在 Windows 一键上打造体验良好的 Linux 终端](https://xnngs.cn/new/terminal.html)
+- [在 Windows 一键上打造体验良好的 Linux 终端](https://juejin.im/post/5bd5a08cf265da0add520772)
 
-## Change log
+## Change Log
 
 - 2019-02-03
 
   - 移除 vim 配置
   - 将命令提示符由 Unicode 字符改为圆点，提高兼容性
+  - 修复安装脚本
 
 - 2018-12-24 
   

@@ -13,8 +13,8 @@ git clone https://gitee.com/xnng/bash.git \
 && cp tmux/share/* /usr/share -r \
 && echo "-------install tmux plugins" \
 && mkdir -p ~/.tmux/plugins/tpm \
-&& "git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm" \
-&& "cp tmux/.tmux.conf ~" \
+&& git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm \
+&& cp tmux/.tmux.conf ~ \
 && echo "press 'prefix I' to install plugins" \
 && echo "-------configuration proxy and user infomation" \
 && cp .gitconfig ~ \

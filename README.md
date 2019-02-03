@@ -1,6 +1,6 @@
 <h4 align="center">Powerful Git Bash</h4>
 <p align="center">
-    <img alt="Git Bash" src="https://user-images.githubusercontent.com/38936252/52173922-dbbbbd80-27c7-11e9-8181-4928ce4087b3.pngga" width="750">
+    <img alt="Git Bash" src="https://user-images.githubusercontent.com/38936252/52173922-dbbbbd80-27c7-11e9-8181-4928ce4087b3.png" width="750">
 </p>
 
 > 以下所有命令都需在 `Git Bash` 中执行。

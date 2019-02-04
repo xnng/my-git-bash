@@ -22,6 +22,9 @@ $ curl https://gitee.com/xnng/bash/raw/master/install.sh | sh
   - 移除 vim 配置
   - 将命令提示符由 Unicode 字符改为圆点，提高兼容性
   - 修复安装脚本
+  - 开启 256 真色支持
+  - 优化 tmux 状态栏配色
+  - 开启 Ctrl + Shift + C/V 快捷键支持
 
 - 2018-12-24 
   

@@ -17,7 +17,6 @@ git clone https://gitee.com/xnng/bash.git \
 && cp tmux/.tmux.conf ~ \
 && echo "press 'prefix I' to install plugins" \
 && echo "-------configuration proxy and user infomation" \
-&& cp .gitconfig ~ \
 && echo "-------install fonts" \
 && start c://Windows//Fonts \
 && start %cd%/fonts \

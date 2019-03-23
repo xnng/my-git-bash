@@ -1,7 +1,7 @@
 Font=DejaVu Sans Mono for Powerline
 FontHeight=14
 Transparency=low
-FontSmoothing=default
+FontSmoothing=full
 Locale=zh_CN
 Charset=UTF-8
 Columns=88
@@ -10,15 +10,11 @@ OpaqueWhenFocused=no
 Scrollbar=none
 Language=zh_CN
 
-#ForegroundColour=131,148,150
-ForegroundColour=250,240,230
-BackgroundColour=39,40,34
-#BackgroundColour=0,43,54
+ForegroundColour=255,255,255
+BackgroundColour=0,43,54
 CursorColour=220,130,71
 
 BoldBlack=128,128,128
-#Red=255,64,40
-#BoldRed=255,128,64
 Green=64,200,64
 BoldGreen=64,255,64
 Yellow=190,190,0
@@ -41,3 +37,4 @@ BellType=0
 CtrlShiftShortcuts=yes
 ConfirmExit=no
 AllowBlinking=yes
+BoldAsFont=no

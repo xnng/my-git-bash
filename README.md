@@ -13,6 +13,14 @@
 $ git clone https://github.com/xnng/my-git-bash.git
 $ cd my-git-bash
 ```
+
+gitee 镜像：
+
+```bash
+$ git clone https://gitee.com/xnng/bash.git
+$ cd bash
+```
+
 ## 安装字体
 
 此字体可解决 unicode 字符乱码问题，执行命令后，将字体文件拖放进去即可完成安装。

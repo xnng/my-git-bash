@@ -3,6 +3,11 @@
 </p>
 <h6 align="center">My Git Bash</h6>
 
+![GitHub](https://img.shields.io/github/license/xnng/my-git-bash.svg?logo=github)
+![](https://img.shields.io/badge/Git%20Bash-%3E%3D2.20.0-blue.svg)
+![](https://img.shields.io/badge/Tmux-v2.7-orange.svg)
+
+
 ## 目录
 
 - [目录](#%E7%9B%AE%E5%BD%95)

@@ -25,6 +25,7 @@
 - [其它](#%E5%85%B6%E5%AE%83)
   - [在 VSCode 中配置 `Git Bash`](#%E5%9C%A8-vscode-%E4%B8%AD%E9%85%8D%E7%BD%AE-git-bash)
   - [解决 win10 快捷键不能秒启动问题](#%E8%A7%A3%E5%86%B3-win10-%E5%BF%AB%E6%8D%B7%E9%94%AE%E4%B8%8D%E8%83%BD%E7%A7%92%E5%90%AF%E5%8A%A8%E9%97%AE%E9%A2%98)
+  - [解决某些命令会卡住不动或无法上下选择脚手架选项的问题](#%E8%A7%A3%E5%86%B3%E6%9F%90%E4%BA%9B%E5%91%BD%E4%BB%A4%E4%BC%9A%E5%8D%A1%E4%BD%8F%E4%B8%8D%E5%8A%A8%E6%88%96%E6%97%A0%E6%B3%95%E4%B8%8A%E4%B8%8B%E9%80%89%E6%8B%A9%E8%84%9A%E6%89%8B%E6%9E%B6%E9%80%89%E9%A1%B9%E7%9A%84%E9%97%AE%E9%A2%98)
 - [更新日志](#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97)
 
 ## 开始使用
@@ -171,9 +172,30 @@ $ cp .gitconfig ~
 
 ### 解决 win10 快捷键不能秒启动问题
 
-为 `Git Bash` 设置了全局快捷键后，可能出现按下快捷键后延迟两秒左右终端才打开的现象，只需要在服务中禁用掉 `superFetch` 即可，此服务在比较新的 win10 上改名为了 `sysMain`。
+为 `Git Bash` 设置了全局快捷键后，可能出现按下快捷键后延迟两秒左右终端才打开的现象，只需要在服务中禁用掉 `superFetch` 即可，此服务在比较新的 win10 上改名为了 `sysMain`，禁用服务后重启操作系统生效
+
+### 解决某些命令会卡住不动或无法上下选择脚手架选项的问题
+
+使用某些命令，如 `python`、`mongo`、`mysql`、`redis-cli` 时会发现有卡住不动的现象，只需要在命令前面加上 `winpty` 即可，每次之性命都都要加这个会比较麻烦，可以设置 `alias` 重写命令，例如：
+
+```bash
+alias wsl='winpty wsl'
+alias mysql='winpty mysql -uroot -p'
+alias mongo='winpty mongo'
+alias redis-cli='winpty redis-cli'
+```
+
+很多脚手架工具在初始化项目的时候提供了可以上下选择选项的功能，该功能在 git bash 中可用，但是无法显示上下选择的效果，需要在命令前加上 `winpty`，同时脚手架命令需要加上后缀 `.cmd`，例如：
+
+```bash
+alias vue='winpty vue.cmd'
+```
 
 ## 更新日志
+
+- 2019-04-28
+
+  - 添加解决某些命令会卡住不动或无法上下选择脚手架选项的解决方法
 
 - 2019-03-25
 

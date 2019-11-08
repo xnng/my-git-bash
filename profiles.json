@@ -1,0 +1,140 @@
+{
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+  "copyOnSelect": true,
+  "initialCols": 100,
+  "initialRows": 27,
+  "profiles": [
+    {
+      "acrylicOpacity": 0.5,
+      "closeOnExit": true,
+      "colorScheme": "Campbell",
+      "commandline": "C:\\Program Files\\Git\\bin\\bash.exe --login -i",
+      "cursorColor": "#FFFFFF",
+      "cursorShape": "bar",
+      "fontFace": "DejaVu Sans Mono for Powerline",
+      "fontSize": 13,
+      "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+      "historySize": 9001,
+      "icon": "https://cdn.xnngs.cn/img/20191024142635.png",
+      "name": "bash",
+      "padding": "10, 0, 0, 0",
+      "snapOnInput": true,
+      "startingDirectory": "%USERPROFILE%",
+      "useAcrylic": false,
+      "background": "#000000"
+    },
+    {
+      "acrylicOpacity": 0.5,
+      "closeOnExit": true,
+      "colorScheme": "Campbell",
+      "commandline": "wsl.exe ~ -d Ubuntu-18.04",
+      "cursorColor": "#FFFFFF",
+      "cursorShape": "bar",
+      "fontFace": "Fira Code",
+      "fontSize": 13,
+      "guid": "{8d04ce37-c00f-43ac-ba47-992cb1393215}",
+      "historySize": 9001,
+      "icon": "https://cdn.xnngs.cn/img/20191024142604.png",
+      "name": "Ubuntu",
+      "padding": "10, 0, 0, 0",
+      "snapOnInput": true,
+      "startingDirectory": "%USERPROFILE%",
+      "useAcrylic": false,
+      "background": "#000000"
+    },
+    {
+      "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+      "hidden": false,
+      "name": "Azure Cloud Shell",
+      "source": "Windows.Terminal.Azure"
+    },
+    {
+      "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+      "hidden": false,
+      "name": "Ubuntu-18.04",
+      "source": "Windows.Terminal.Wsl"
+    }
+  ],
+  "schemes": [],
+  "keybindings": [
+    {
+      "command": "closeTab",
+      "keys": [
+        "ctrl+w"
+      ]
+    },
+    {
+      "command": "copy",
+      "keys": [
+        "ctrl+shift+c"
+      ]
+    },
+    {
+      "command": "duplicateTab",
+      "keys": [
+        "ctrl+shift+d"
+      ]
+    },
+    {
+      "command": "newTab",
+      "keys": [
+        "ctrl+t"
+      ]
+    },
+    {
+      "command": "newTabProfile0",
+      "keys": [
+        "ctrl+shift+1"
+      ]
+    },
+    {
+      "command": "newTabProfile1",
+      "keys": [
+        "ctrl+shift+2"
+      ]
+    },
+    {
+      "command": "nextTab",
+      "keys": [
+        "ctrl+tab"
+      ]
+    },
+    {
+      "command": "openSettings",
+      "keys": [
+        "ctrl+,"
+      ]
+    },
+    {
+      "command": "paste",
+      "keys": [
+        "ctrl+shift+v"
+      ]
+    },
+    {
+      "command": "prevTab",
+      "keys": [
+        "ctrl+shift+tab"
+      ]
+    },
+    {
+      "command": "switchToTab0",
+      "keys": [
+        "alt+1"
+      ]
+    },
+    {
+      "command": "switchToTab1",
+      "keys": [
+        "alt+2"
+      ]
+    },
+    {
+      "command": "switchToTab2",
+      "keys": [
+        "alt+3"
+      ]
+    }
+  ]
+}

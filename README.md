@@ -28,6 +28,14 @@
   - [解决某些命令会卡住不动或无法上下选择脚手架选项的问题](#%E8%A7%A3%E5%86%B3%E6%9F%90%E4%BA%9B%E5%91%BD%E4%BB%A4%E4%BC%9A%E5%8D%A1%E4%BD%8F%E4%B8%8D%E5%8A%A8%E6%88%96%E6%97%A0%E6%B3%95%E4%B8%8A%E4%B8%8B%E9%80%89%E6%8B%A9%E8%84%9A%E6%89%8B%E6%9E%B6%E9%80%89%E9%A1%B9%E7%9A%84%E9%97%AE%E9%A2%98)
 - [更新日志](#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97)
 
+## 使用前说明
+
+本仓库的最初目的是探索如何在 Windows 上打造出非常易用的终端环境。后来随着 Windows Terminal 和 WSL2 的发布，微软给出了一套更好的解决方案。不过目前的 WSL2 使用起来仍然像是个虚拟机，且资源消耗非常高，不适合 8GB 内存的电脑使用。
+
+我认为现阶段 Windows Terminal（终端） + Git Bash（Shell）会是一个更好的选择，WSL2 辅助来用。
+
+所以，我建议使用 Windows Terinal 作为终端，Git Bash 作为 Shell 搭配其使用。Git Bash 的精髓在于 alias 和自带常用 linux 命令，性能也非常高，而 Windows Terminal 目前作为终端来说可定制性和易用性更好，比如自带多标签和分屏功能，目前 Windows Terminal 的快捷键需要自行配置，我将我的配置放到了 `profiles.json` 文件中，仅供参考。
+
 ## 开始使用
 
 以下所有命令都需要在「以管理员身份运行」的 Git Bash 中执行。
@@ -192,6 +200,10 @@ alias vue='winpty vue.cmd'
 ```
 
 ## 更新日志
+
+- 2019-11-08
+
+  - 新增 windows terminal 配置
 
 - 2019-04-28
 

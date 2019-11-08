@@ -36,6 +36,8 @@
 
 所以，我建议使用 Windows Terinal 作为终端，Git Bash 作为 Shell 搭配其使用。Git Bash 的精髓在于 alias 和自带常用 linux 命令，性能也非常高，而 Windows Terminal 目前作为终端来说可定制性和易用性更好，比如自带多标签和分屏功能，目前 Windows Terminal 的快捷键需要自行配置，我将我的配置放到了 `profiles.json` 文件中，仅供参考。
 
+以下内容，永不过时。
+
 ## 开始使用
 
 以下所有命令都需要在「以管理员身份运行」的 Git Bash 中执行。

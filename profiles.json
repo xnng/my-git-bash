@@ -59,6 +59,66 @@
   "schemes": [],
   "keybindings": [
     {
+      "command": "resizePaneRight",
+      "keys": [
+        "shift+alt+right"
+      ]
+    },
+    {
+      "command": "resizePaneUp",
+      "keys": [
+        "shift+alt+up"
+      ]
+    },
+    {
+      "command": "resizePaneDown",
+      "keys": [
+        "shift+alt+down"
+      ]
+    },
+    {
+      "command": "resizePaneLeft",
+      "keys": [
+        "shift+alt+left"
+      ]
+    },
+    {
+      "command": "moveFocusDown",
+      "keys": [
+        "ctrl+alt+down"
+      ]
+    },
+    {
+      "command": "moveFocusLeft",
+      "keys": [
+        "ctrl+alt+left"
+      ]
+    },
+    {
+      "command": "moveFocusRight",
+      "keys": [
+        "ctrl+alt+right"
+      ]
+    },
+    {
+      "command": "resizePaneUp",
+      "keys": [
+        "shift+alt+up"
+      ]
+    },
+    {
+      "command": "splitHorizontal",
+      "keys": [
+        "ctrl+shift+-"
+      ]
+    },
+    {
+      "command": "splitVertical",
+      "keys": [
+        "ctrl+shift+|"
+      ]
+    },
+    {
       "command": "closeTab",
       "keys": [
         "ctrl+w"
@@ -116,24 +176,6 @@
       "command": "prevTab",
       "keys": [
         "ctrl+shift+tab"
-      ]
-    },
-    {
-      "command": "switchToTab0",
-      "keys": [
-        "alt+1"
-      ]
-    },
-    {
-      "command": "switchToTab1",
-      "keys": [
-        "alt+2"
-      ]
-    },
-    {
-      "command": "switchToTab2",
-      "keys": [
-        "alt+3"
       ]
     }
   ]
